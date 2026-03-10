@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynatrace - Host Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar main-sidebar wide">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <div class="logo-text">Dynatrace</div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item" title="Search"><i class="fa-solid fa-magnifying-glass"></i><span
+                        class="nav-text">Search<span class="shortcut">Ctrl K</span></span></a>
+                <a href="#" class="nav-item" title="Assist"><i class="fa-solid fa-wand-magic-sparkles"></i><span
+                        class="nav-text">Assist<span class="shortcut">Ctrl I</span></span></a>
+                <a href="#" class="nav-item title-apps"><i class="fa-solid fa-braille"></i><span
+                        class="nav-text">Apps</span></a>
+                <div class="nav-divider"></div>
+                <!-- Other links -->
+                <a href="#" class="nav-item" title="Notebooks"><i class="fa-solid fa-book"></i><span
+                        class="nav-text">Notebooks</span></a>
+                <a href="#" class="nav-item" title="Dashboards"><i class="fa-solid fa-chart-pie"></i><span
+                        class="nav-text">Dashboards</span></a>
+                <a href="#" class="nav-item" title="Workflows"><i class="fa-solid fa-network-wired"></i><span
+                        class="nav-text">Workflows</span></a>
+                <a href="#" class="nav-item" title="Hub"><i class="fa-solid fa-hexagon-nodes"></i><span
+                        class="nav-text">Hub</span></a>
+                <a href="#" class="nav-item" title="Dashboards Classic"><i class="fa-solid fa-desktop"></i><span
+                        class="nav-text">Dashboards Classic</span></a>
+                <a href="#" class="nav-item text-red" title="Problems Classic"><i
+                        class="fa-solid fa-circle-exclamation"></i><span class="nav-text">Problems Classic</span></a>
+                <div class="nav-divider"></div>
+                <a href="#" class="nav-item active" title="Hosts Classic"><i class="fa-solid fa-cloud"></i><span
+                        class="nav-text">Hosts Classic</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item"><i class="fa-solid fa-angles-left"></i><span
+                        class="nav-text">Collapse</span></a>
+                <a href="#" class="nav-item"><i class="fa-regular fa-life-ring"></i><span
+                        class="nav-text">Support</span></a>
+                <a href="#" class="nav-item user-item">
+                    <div class="user-avatar">EA</div><span class="nav-text user-info">Ezaz
+                        Ahamed<br><small>Farmers</small></span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header (Blue) -->
+            <header class="top-header blue-header">
+                <div class="header-left">
+                    <span class="breadcrumb-root">Hosts</span>
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator"></i>
+                    <span class="breadcrumb-current">fmlvppbs1112 [PC_Prod]</span>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn header-btn"><i class="fa-solid fa-filter"></i></button>
+                    <button class="icon-btn header-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="time-selector header-btn">
+                        <span>Last 2 hours</span>
+                    </div>
+                    <button class="icon-btn header-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <div class="scrollable-content">
+
+                    <!-- Host Overview Header -->
+                    <div class="host-header-section">
+                        <div class="host-title-row">
+                            <div class="host-icon"><img src="https://cdn-icons-png.flaticon.com/512/2916/2916174.png"
+                                    width="40" style="opacity:0.2;"></div>
+                            <div class="host-info">
+                                <h1>fmlvppbs1112 [PC_Prod]</h1>
+                                <h2>Overview of the Host</h2>
+                                <h3 class="host-subtitle">
+                                    Monitoring mode <span class="fw-500">Infrastructure only</span>
+                                    Host group <span class="text-teal fw-500">PC_Prod</span>
+                                    Management zones <span class="text-teal fw-500">Certificate_Monitoring, Systems
+                                        Reliability Engineering , All - Production, PC_Prod, All - Prod Opsgenie,
+                                        zVM:Farmers Personal Lines IT, Infrastructure</span>
+                                </h3>
+                            </div>
+                            <div class="flex-spacer"></div>
+                            <div class="host-actions">
+                                <button class="action-btn text-blue border-btn"><i
+                                        class="fa-solid fa-ellipsis"></i></button>
+                                <button class="action-btn text-blue"><i class="fa-regular fa-thumbs-up"></i></button>
+                                <button class="action-btn text-blue"><i class="fa-solid fa-rotate-right"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="host-tags-row">
+                            <span class="tag-item">Properties and tags</span>
+                            <span class="status-pill green-text"><i class="fa-solid fa-check"></i> No problems</span>
+                            <span class="status-pill red-bg"><i class="fa-solid fa-shield-halved"></i> 108</span>
+                            <span class="tag-item">Vulnerabilities</span>
+                            <span class="tag-item">99.17 % Availability</span>
+                            <span class="status-pill gray-bg"><i class="fa-solid fa-cube"></i> 0 SLOs</span>
+                            <span class="tag-item fw-500"><i class="fa-solid fa-users"></i> Owners</span>
+                        </div>
+                    </div>
+
+                    <!-- Mini KPI Row -->
+                    <div class="kpi-row">
+                        <div class="kpi-card green-kpi">
+                            <i class="fa-solid fa-check card-icon"></i>
+                            <span class="kpi-label">Uptime</span>
+                            <div class="flex-spacer"></div>
+                            <span class="kpi-value">32.1 d</span>
+                        </div>
+                        <div class="kpi-card green-kpi">
+                            <i class="fa-solid fa-check card-icon"></i>
+                            <span class="kpi-label">CPU</span>
+                            <div class="flex-spacer"></div>
+                            <span class="kpi-value">7.93 %</span>
+                        </div>
+                        <div class="kpi-card green-kpi">
+                            <i class="fa-solid fa-check card-icon"></i>
+                            <span class="kpi-label">Available<br>memory</span>
+                            <div class="flex-spacer"></div>
+                            <span class="kpi-value">60.9 %</span>
+                        </div>
+                        <div class="kpi-card green-kpi">
+                            <i class="fa-solid fa-check card-icon"></i>
+                            <span class="kpi-label">Network</span>
+                            <div class="flex-spacer"></div>
+                            <span class="kpi-value">162 kbit/s</span>
+                        </div>
+                    </div>
+
+                    <!-- Connections Row -->
+                    <div class="connections-row">
+                        <div class="conn-card panel border-top-light">
+                            <div class="conn-header">
+                                <div>
+                                    <h3>Incoming connections</h3>
+                                    <span class="subtitle">Contains 3 Hosts.</span>
+                                </div>
+                                <div class="conn-actions">
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                    <button class="small-btn text-blue"><i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conn-card panel border-top-light">
+                            <div class="conn-header">
+                                <div>
+                                    <h3>Outgoing connections</h3>
+                                    <span class="subtitle">Contains 10 Hosts.</span>
+                                </div>
+                                <div class="conn-actions">
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                    <button class="small-btn text-blue"><i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Host Performance Panel -->
+                    <div class="performance-panel panel border-top-light">
+                        <div class="perf-header">
+                            <h3>Host performance</h3>
+                            <button class="small-btn text-blue collapse-btn"><i
+                                    class="fa-solid fa-chevron-up"></i></button>
+                        </div>
+
+                        <div class="chart-grid">
+                            <!-- Chart 1: CPU -->
+                            <div class="chart-box">
+                                <div class="chart-controls">
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>CPU usage</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>Average</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-spacer"></div>
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                </div>
+                                <div class="chart-content">
+                                    <div class="y-axis">
+                                        <span>100 %</span>
+                                        <span>80 %</span>
+                                        <span>40 %</span>
+                                        <span>0 %</span>
+                                    </div>
+                                    <div class="chart-area" id="cpuChart"></div>
+                                </div>
+                                <div class="x-axis">
+                                    <span>15:00</span><span>15:15</span><span>15:30</span><span>15:45</span><span>16:00</span><span>16:15</span><span>16:30</span><span>16:45</span>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#f1f2f5;"></span> CPU idle</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#9b59b6;"></span> CPU I/O wait</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#fcebbc;"></span> CPU user</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#55c5cc;"></span> CPU system</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#e74c3c;"></span> CPU steal</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#e67e22;"></span> CPU other</div>
+                                </div>
+                            </div>
+
+                            <!-- Chart 2: Memory -->
+                            <div class="chart-box">
+                                <div class="chart-controls">
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>Memory usage</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper disabled">
+                                        <select disabled>
+                                            <option>No aggregation</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-spacer"></div>
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                </div>
+                                <div class="chart-content">
+                                    <div class="y-axis">
+                                        <span>33.5 GiB</span>
+                                        <span>22.4 GiB</span>
+                                        <span>11.2 GiB</span>
+                                        <span>0 B</span>
+                                    </div>
+                                    <div class="chart-area" id="memChart"></div>
+                                </div>
+                                <div class="x-axis">
+                                    <span>15:00</span><span>15:15</span><span>15:30</span><span>15:45</span><span>16:00</span><span>16:15</span><span>16:30</span><span>16:45</span>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item"><span class="legend-line"
+                                            style="border-color:#55c5cc;"></span> Memory total</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#5a84b5;"></span> Memory reclaimable</div>
+                                    <div class="legend-item"><span class="legend-color"
+                                            style="background:#285288;"></span> Memory used</div>
+                                </div>
+                            </div>
+
+                            <!-- Chart 3: VM memory -->
+                            <div class="chart-box" style="border-bottom:none;">
+                                <div class="chart-controls">
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>VM memory usage</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>Average</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-spacer"></div>
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                </div>
+                                <div class="chart-content">
+                                    <div class="y-axis">
+                                        <span>34.3 GiB</span>
+                                        <span>22.9 GiB</span>
+                                        <span>11.4 GiB</span>
+                                        <span>0 KiB</span>
+                                    </div>
+                                    <div class="chart-area" id="vmMemChart"></div>
+                                </div>
+                                <div class="x-axis">
+                                    <span>15:00</span><span>15:15</span><span>15:30</span><span>15:45</span><span>16:00</span><span>16:15</span><span>16:30</span><span>16:45</span>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item"><span class="legend-line"
+                                            style="border-color:#a5aae3;"></span> VM memory active</div>
+                                    <div class="legend-item"><span class="legend-line"
+                                            style="border-color:#48327a;"></span> VM memory consumed</div>
+                                </div>
+                            </div>
+
+                            <!-- Chart 4: Traffic -->
+                            <div class="chart-box" style="border-bottom:none;">
+                                <div class="chart-controls">
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>Traffic</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <select>
+                                            <option>Sum</option>
+                                        </select>
+                                    </div>
+                                    <div class="flex-spacer"></div>
+                                    <button class="small-btn outline-btn text-blue"><i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                </div>
+                                <div class="chart-content">
+                                    <div class="y-axis">
+                                        <span>750 kbit/s</span>
+                                        <span>500 kbit/s</span>
+                                        <span>250 kbit/s</span>
+                                        <span>0 bit/s</span>
+                                    </div>
+                                    <div class="chart-area" id="trafficChart"></div>
+                                </div>
+                                <div class="x-axis">
+                                    <span>15:00</span><span>15:15</span><span>15:30</span><span>15:45</span><span>16:00</span><span>16:15</span><span>16:30</span><span>16:45</span>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item"><span class="legend-line"
+                                            style="border-color:#5a84b5;"></span> Traffic in</div>
+                                    <div class="legend-item"><span class="legend-line"
+                                            style="border-color:#3b348f;"></span> Traffic out</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Affix Navigation -->
+                <aside class="right-nav">
+                    <button class="scroll-to-btn text-teal"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <div class="scroll-title">Scroll to</div>
+                    <ul class="scroll-list">
+                        <li><a href="#" class="active text-teal">Incoming connections</a></li>
+                        <li><a href="#" class="active text-teal">Outgoing connections</a></li>
+                        <li><a href="#" class="active text-teal">Host performance</a></li>
+                        <li><a href="#">Process analysis</a></li>
+                        <li><a href="#">Disk analysis</a></li>
+                        <li><a href="#">Network analysis</a></li>
+                        <li><a href="#">Memory analysis</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Logs</a></li>
+                        <li><a href="#">Log sources</a></li>
+                        <li><a href="#">VMware Integration</a></li>
+                        <li><a href="#">Related certificates</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
