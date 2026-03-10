@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynatrace Mockup Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0073e6;
+            --bg: #12151c;
+            --card-bg: #1e222d;
+            --text: #ffffff;
+            --text-muted: #b0b4c2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .demo-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .demo-card i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .demo-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .demo-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .demo-card .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 115, 230, 0.2);
+            color: var(--primary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .status-pill {
+            margin-top: 15px;
+            font-size: 11px;
+            padding: 4px 12px;
+            border-radius: 100px;
+            background: #2a2f3e;
+            color: #88ef88;
+        }
+
+        footer {
+            margin-top: 80px;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dynatrace Dashboard Gallery</h1>
+        <p>A collection of high-fidelity UI replicas built for testing and demonstration.</p>
+    </header>
+
+    <div class="gallery-grid">
+        <!-- Demo 1 -->
+        <a href="demoui/demo1/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-server"></i>
+            <h3>Host Overview 1</h3>
+            <p>Standard Dynatrace host metrics dashboard with charts.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 2 -->
+        <a href="demoui/demo2/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Host Overview 2</h3>
+            <p>Active monitoring state with green KPI cards and SVG charts.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 3 -->
+        <a href="demoui/demo3/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-microchip"></i>
+            <h3>Host Overview 3</h3>
+            <p>Detailed performance analytics for production servers.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 4 -->
+        <a href="demoui/demo4/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-gauge-high"></i>
+            <h3>Host Overview 4</h3>
+            <p>Refined data points for specific infrastructure nodes.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 5 -->
+        <a href="demoui/demo5/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-database"></i>
+            <h3>Host Overview 5</h3>
+            <p>Server-side insights with tailored metrics visualization.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 6 -->
+        <a href="demoui/demo6/index.html" class="demo-card">
+            <span class="badge">Host</span>
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>Host Overview 6</h3>
+            <p>High-fidelity replica mirror of active infrastructure.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 7 -->
+        <a href="demoui/demo7/index.html" class="demo-card">
+            <span class="badge">Status</span>
+            <i class="fa-solid fa-circle-pause" style="color: #ff9800;"></i>
+            <h3>Inactive Host 1</h3>
+            <p>Demonstrates the 'Inactive' status banner and empty states.</p>
+            <div class="status-pill" style="color: #ff9800;">Inactive</div>
+        </a>
+
+        <!-- Demo 8 -->
+        <a href="demoui/demo8/index.html" class="demo-card">
+            <span class="badge">Status</span>
+            <i class="fa-solid fa-triangle-exclamation" style="color: #ff9800;"></i>
+            <h3>Inactive Host 2</h3>
+            <p>Mockup for secondary offline host (fmlvpjap1140).</p>
+            <div class="status-pill" style="color: #ff9800;">Inactive</div>
+        </a>
+
+        <!-- Demo 9 -->
+        <a href="demoui/demo9/index.html" class="demo-card">
+            <span class="badge">Service</span>
+            <i class="fa-solid fa-cube" style="color: #f06292;"></i>
+            <h3>Services View 1</h3>
+            <p>Interactive service flow diagram with throughput metrics.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 10 -->
+        <a href="demoui/demo10/index.html" class="demo-card">
+            <span class="badge">Hotspots</span>
+            <i class="fa-solid fa-fire-flame-curved" style="color: #f06292;"></i>
+            <h3>Services View 2</h3>
+            <p>PolicyCenter view with Hotspot detection alerts.</p>
+            <div class="status-pill">Active</div>
+        </a>
+
+        <!-- Demo 11 -->
+        <a href="demoui/demo11/index.html" class="demo-card">
+            <span class="badge">MQ</span>
+            <i class="fa-solid fa-envelope-open-text" style="color: #f06292;"></i>
+            <h3>IBM MQ Listener</h3>
+            <p>Messaging queue listener with 14 active queues flow.</p>
+            <div class="status-pill">Active</div>
+        </a>
+    </div>
+
+    <footer>
+        Built with Antigravity AI &bull; Exact Replicas &bull; 2026
+    </footer>
+</body>
+
+</html>
